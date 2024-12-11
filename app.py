@@ -10,7 +10,7 @@ import cv2
 
 app = Flask(__name__)
 
-MODEL_PATH = "Deep-Learning/FlaskApp/model_balanced.tflite"
+MODEL_PATH = "model_balanced.tflite"
 interpreter = tf.lite.Interpreter(model_path=MODEL_PATH)
 interpreter.allocate_tensors()
 
